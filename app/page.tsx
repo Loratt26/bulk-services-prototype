@@ -1,6 +1,6 @@
 'use client';
 
-import { AppProvider, Page, Layout, Card, InlineStack, Button, Text, ButtonGroup } from '@shopify/polaris';
+import { AppProvider, Page, Layout, Card, InlineStack, Text } from '@shopify/polaris';
 import enTranslations from '@shopify/polaris/locales/en.json';
 import '@shopify/polaris/build/esm/styles.css';
 import CreateGroupServicesWizard from '@/components/CreateGroupServices';
@@ -16,10 +16,7 @@ export default function Home() {
                 <Text as="h2" variant="headingMd">
                   Services
                 </Text>
-                <ButtonGroup>
-                  <Button variant="primary">New service</Button>
-                  <CreateGroupServicesWizard />
-                </ButtonGroup>
+                <CreateGroupServicesWizard />
               </InlineStack>
             </Card>
           </Layout.Section>
